@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+/*
+nodeGaudi platform agnostic build tool.
+Copyright 2014 Sam Saint-Pettersen.
+
+Gaudi implemented with Node.js
+
+Released under the MIT/X11 License.
+Please see LICENSE file.
+*/
+
+// Invoke the nodeGaudi command line interface (CLI).
+require('./lib/NodeGaudiApp.js').cli(process.argv);
