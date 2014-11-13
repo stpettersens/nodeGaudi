@@ -1,0 +1,25 @@
+{
+	"preamble": {
+	
+		"source": "-",
+		"target": "directories"
+	},
+
+	"build": [
+
+		{ "echo": "Create a directory: src" },
+		{ "mkdir": "src" },
+		{ "echo": "Create a text file: blah.txt" },
+		{ "append": "blah.txt>>Created a directory." }
+		{ "echo": "Display text file contents..." },
+		{ "cat": "blah.txt" }
+	],
+	
+	"clean": [
+
+		{ "echo": "Remove directory: src" },
+		{ "erase": "src" },
+		{ "echo": "Remove file: blah.txt" },
+		{ "erase": "blah.txt" }
+	]
+}
