@@ -10,4 +10,4 @@ Please see LICENSE file.
 */
 
 // Invoke the nodeGaudi command line interface (CLI).
-require('../lib/NodeGaudiApp.js').cli(process.argv);
+require('./lib/NodeGaudiApp.js').cli(process.argv);

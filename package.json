@@ -11,10 +11,11 @@
     "example": "examples"
   },
   "dependencies": {
-    "generic-functions": ">=0.1.2"
+    "generic-functions": ">=0.1.2",
+    "ncp": ">=1.0.1"
   },
   "devDependencies": {
-    "vows": ">= 0.8.x"
+  	"jake": ">= 8.0.10"
   },
   "scripts": {
     "test": "vows test/**/*-test.js --spec -i"
