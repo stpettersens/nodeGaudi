@@ -17,7 +17,6 @@
 	"clean": [
 
 		{ "echo": "Erasing Hello World program and log file..." },
-		{ "erasex": "hw" },
 		{ "erase": "output.log" }
 	]
 }
