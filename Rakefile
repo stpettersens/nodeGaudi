@@ -26,6 +26,7 @@ task :test do
 		puts ""
 		puts "Testing clean action..."
 		sh "../../nodeGaudi -f tbuild.json clean"
+		puts ""
 		sh "ls -a"
 	end
 end
