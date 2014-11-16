@@ -19,13 +19,13 @@ task :test do
 	puts ""
 	Dir.chdir('examples/HelloWorld') do
 		puts "Testing build action for HelloWorld example program..."
-		sh "../../nodeGaudi -f build.json build"
+		sh "../../nodeGaudi -f tbuild.json build"
 		puts ""
 		#sh "./hw"
 		sh "ls -a"
 		puts ""
 		puts "Testing clean action..."
-		sh "../../nodeGaudi -f build.json clean"
+		sh "../../nodeGaudi -f tbuild.json clean"
 		sh "ls -a"
 	end
 end
