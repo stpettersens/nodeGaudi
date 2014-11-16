@@ -21,9 +21,11 @@ task :test do
 		puts "Testing build action for HelloWorld example program..."
 		sh "../../nodeGaudi -f build.json build"
 		puts ""
-		sh "./hw"
+		#sh "./hw"
+		sh "ls -a"
 		puts ""
 		puts "Testing clean action..."
 		sh "../../nodeGaudi -f build.json clean"
+		sh "ls -a"
 	end
 end
