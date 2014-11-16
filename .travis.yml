@@ -10,6 +10,7 @@ node_js:
 
 # Use `g++` for compiling HelloWorld C++ example.
 compiler: g++
-install: g++
+install: g++ --version
+
 # Use `rake travis` to test.
 script: rake travis
