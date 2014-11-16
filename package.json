@@ -14,9 +14,6 @@
     "generic-functions": ">=0.1.2",
     "ncp": ">=1.0.1"
   },
-  "devDependencies": {
-  	"jake": ">= 8.0.10"
-  },
   "scripts": {
     "test": "vows test/**/*-test.js --spec -i"
   },
