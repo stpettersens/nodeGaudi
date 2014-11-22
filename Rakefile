@@ -52,4 +52,5 @@ task :test do
 		sh "../../nodeGaudi -f build.cson clean"
 		puts ""
 		sh "ls -a"
+	end
 end
