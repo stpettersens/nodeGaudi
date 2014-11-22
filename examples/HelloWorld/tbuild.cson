@@ -1,0 +1,22 @@
+{
+	# Define preamble.
+	preamble: {
+		source: "hw.cpp"
+		target: "hw"
+		cc: "hw"
+	}
+
+	# Define build action.
+	build: [
+		{ echo: "Compiling Hello World program..." }
+		{ exec: "g++ hw.cpp -o hw" }
+		{ echo: "Appending to log file..." }
+		{ append: "output.log>>Built executable." }
+	]
+
+	# Define clean action.
+	clean: [
+		{ echo: "Erasing Hello World program and log file..." }
+		{ erase: "output.log" }
+	]
+}
