@@ -36,7 +36,7 @@ task :test do
 		sh "ls -a"
 	end
 	Dir.chdir('examples/Directories') do
-		puts "Testing build action (build.json) for Directories example..."
+		puts "\nTesting build action (build.json) for Directories example..."
 		sh "../../nodeGaudi -f build.json build"
 		puts ""
 		sh "ls -a"
