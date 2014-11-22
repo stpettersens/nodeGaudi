@@ -1,11 +1,11 @@
 #
 # Test nodeGaudi on local system or Travis CI.
-# 
+#
 
 task :travis => [:deps, :test]
 
 task :deps do
-	puts "Get dependencies and install via Node package manager (npm)..."
+	puts "Get and install dependencies via Node package manager (npm)..."
 	sh "npm install"
 	puts ""
 end
@@ -18,13 +18,20 @@ task :test do
 	sh "./nodeGaudi -v"
 	puts ""
 	Dir.chdir('examples/HelloWorld') do
-		puts "Testing build action for HelloWorld example program..."
+		puts "Testing build action (tbuild.json) for HelloWorld example program..."
 		sh "../../nodeGaudi -f tbuild.json build"
 		puts ""
 		sh "ls -a"
-		puts ""
-		puts "Testing clean action..."
+		puts "\nTesting clean action (tbuild.json)..."
 		sh "../../nodeGaudi -f tbuild.json clean"
+		puts ""
+		sh "ls -a"
+		puts "\nTesting build action (tbuild.cson) for HelloWorld example program..."
+		sh "../../nodeGaudi -f tbuild.cson build"
+		puts ""
+		sh "ls -a"
+		puts "\nTesting clean action (tbuild.cson)..."
+		sh "../../nodeGaudi -f tbuild.cson clean"
 		puts ""
 		sh "ls -a"
 	end

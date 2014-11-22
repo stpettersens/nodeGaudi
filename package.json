@@ -1,40 +1,44 @@
 {
-  "name": "nodeGaudi-wip",
-  "version": "0.1.0",
-  "description": "Gaudi platform agnostic build tool implemented with Node.js",
-  "main": "./lib/NodeGaudiApp.js",
-  "bin": {
-    "nodeGaudi": "./bin/nodeGaudi"
-  },
-  "preferGlobal": true,
-  "directories": {
-    "example": "examples"
-  },
-  "dependencies": {
-    "generic-functions": ">=0.1.2",
-    "ncp": ">=1.0.1"
-  },
-  "scripts": {
-    "test": "vows test/**/*-test.js --spec -i"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/stpettersens/nodeGaudi"
-  },
-  "keywords": [
-    "platform",
-    "agnostic",
-    "build",
-    "tool",
-    "cli",
-    "tools"
-  ],
-  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com> (http://github.com/stpettersens)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stpettersens/nodeGaudi/issues"
-  },
-  "engines": {
-    "node": ">= 0.8.x"
-  }
+    "name": "nodeGaudi-wip",
+    "version": "0.1.0",
+    "description": "Gaudi platform agnostic build tool implemented with Node.js",
+    "main": "./lib/NodeGaudiApp.js",
+    "bin": {
+        "nodeGaudi": "./bin/nodeGaudi"
+    },
+    "preferGlobal": true,
+    "directories": {
+        "example": "examples"
+    },
+    "dependencies": {
+        "generic-functions": ">= 0.1.4",
+        "ncp": ">= 1.0.1",
+        "cson": ">= 1.6.1"
+    },
+    "devDependencies": {
+        "vows": ">= 0.8.x"
+    },
+    "scripts": {
+        "test": "vows test/**/*-test.js --spec -i"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/stpettersens/nodeGaudi"
+    },
+    "keywords": [
+        "platform",
+        "agnostic",
+        "build",
+        "tool",
+        "cli",
+        "tools"
+    ],
+    "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com> (http://github.com/stpettersens)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/stpettersens/nodeGaudi/issues"
+    },
+    "engines": {
+        "node": ">= 1.0.x"
+    }
 }
