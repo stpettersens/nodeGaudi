@@ -1,0 +1,25 @@
+{
+    # Define preamble.
+    preamble: {
+        source: "-"
+        target: "directories"
+    }
+
+    # Define build action.
+    build: [
+        { echo: "Create a directory: src" }
+        { mkdir: "src" }
+        { echo: "Create a text file: blah.txt" }
+        { append: "blah.txt>>Create a directory." }
+        { echo: "Display text file contents..." }
+        { cat: "blah.txt" }
+    ]
+
+    # Define clean action.
+    clean: [
+        { echo: "Remove directory: src" }
+        { erase: "src" }
+        { echo: "Remove text file: blah.txt" }
+        { erase: "blah.txt" }    
+    ]
+}
