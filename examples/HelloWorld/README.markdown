@@ -3,10 +3,10 @@ Building with nodeGaudi example #1
 Simple example Hello World program
 written in C++ and the Gaudi build file to build it.
 
-Here you will see that `modeGaudi` is invoked in a very
+Here you will see that `nodeGaudi` is invoked in a very
 similar manner to the traditional `make` tool.
 
-Assuming nodeGaudi is installed, to build the program (invoke `build` action) just
+Assuming `nodeGaudi` is installed, to build the program (invoke `build` action) just
 run:
 
 > `nodeGaudi`
