@@ -1,0 +1,25 @@
+#
+# Test nodeGaudi on local system with nodeGaudi itself.
+# build.cson - CoffeeScript Object Notation build file.
+#
+{
+    # Define preamble.
+    preamble: {
+        source: "-"
+        target: "-"
+        cc: "-"
+    }
+
+    # Define build action, an alias for test action.
+    build: [
+        { doAction: "test" }
+    ]
+
+    # Define test action.
+    test: [
+        { echo: "Display usage information and exit..." }
+        { exec: "nodeGaudi -i" }
+        { echo: "Display version information and exit..." }
+        { exec: "nodeGaudi -v" }
+    ]
+}
