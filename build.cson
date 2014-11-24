@@ -13,6 +13,7 @@
     # Define build action, an alias for test action.
     build: [
         { doAction: "test" }
+        { exec: "echo abc" }
     ]
 
     # Define test action.
