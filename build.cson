@@ -19,7 +19,14 @@
     test: [
         { echo: "Display usage information and exit..." }
         { exec: "nodeGaudi -i" }
-        { echo: "Display version information and exit..." }
+        { echo: "Display version and exit..." }
         { exec: "nodeGaudi -v" }
+        { echo: "Testing build action (build.json) for HelloWorld example program..." }
+        { chdir: "examples/HelloWorld" }
+        { exec: "../../nodeGaudi -f build.json build" }
+        # { exec: "./hw" }
+        # { pause: 500000 }
+        # { echo: "Testing clean action (build.json)..." }
+        # { exec: "../../nodeGaudi -f build.json clean" }
     ]
 }

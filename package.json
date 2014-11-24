@@ -14,7 +14,8 @@
         "generic-functions": ">= 0.1.4",
         "ncp": ">= 1.0.1",
         "cson": ">= 1.6.1",
-        "performance-now": ">= 0.2.0"
+        "performance-now": ">= 0.2.0",
+        "sleep": ">= 1.1.8"
     },
     "devDependencies": {
         "vows": ">= 0.8.x"
