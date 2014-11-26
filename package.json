@@ -12,6 +12,8 @@
     },
     "dependencies": {
         "generic-functions": ">= 0.1.4",
+        "exec-sync": ">= 0.1.6",
+        "colors": ">= 1.0.3",
         "ncp": ">= 1.0.1",
         "cson": ">= 1.6.1",
         "performance-now": ">= 0.2.0",

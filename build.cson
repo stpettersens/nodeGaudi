@@ -1,5 +1,5 @@
 #
-# Test nodeGaudi on local system with nodeGaudi itself.
+# Test nodeGaudi on local system or Travis CI with nodeGaudi itself.
 # build.cson - CoffeeScript Object Notation build file.
 #
 {
@@ -10,24 +10,29 @@
         cc: "-"
     }
 
+    # Define dependencies action
+    deps: [
+        { echo: "Get and install dependencies via Node package manager (npm)..." }
+        { exec: "npm install" }
+        { echo: "" }
+    ]
+
     # Define build action, an alias for test action.
     build: [
         { doAction: "test" }
-        { exec: "echo abc" }
     ]
 
     # Define test action.
     test: [
         { echo: "Display usage information and exit..." }
-        { exec: "nodeGaudi -i" }
+        { exec: "./nodeGaudi -i" }
         { echo: "Display version and exit..." }
-        { exec: "nodeGaudi -v" }
+        { exec: "./nodeGaudi -v" }
         { echo: "Testing build action (build.json) for HelloWorld example program..." }
         { chdir: "examples/HelloWorld" }
         { exec: "../../nodeGaudi -f build.json build" }
-        # { exec: "./hw" }
-        # { pause: 500000 }
-        # { echo: "Testing clean action (build.json)..." }
-        # { exec: "../../nodeGaudi -f build.json clean" }
+        { exec: "./hw" }
+        { echo: "Testing clean action (build.json)..." }
+        { exec: "../../nodeGaudi -f build.json clean" }
     ]
 }

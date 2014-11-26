@@ -13,4 +13,6 @@ compiler: g++
 install: g++ --version
 
 # Use `rake travis` to test.
-script: rake travis
+#script: rake travis
+before_script: npm install
+script: ./nodeGaudi
