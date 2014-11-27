@@ -12,7 +12,6 @@ node_js:
 compiler: g++
 install: g++ --version
 
-# Use `rake travis` to test.
-#script: rake travis
+# Get dependencies via `npm install` and then invoke nodeGaudi itself to test functionality.
 before_script: npm install
 script: ./nodeGaudi -f build.cson test
