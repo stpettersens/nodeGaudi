@@ -28,11 +28,29 @@
         { exec: "./nodeGaudi -i" }
         { echo: "Display version and exit..." }
         { exec: "./nodeGaudi -v" }
-        { echo: "Testing build action (build.json) for HelloWorld example program..." }
         { chdir: "examples/HelloWorld" }
+        { echo: "Testing build action (build.json) for HelloWorld example program..." }
         { exec: "../../nodeGaudi -f build.json build" }
         { exec: "./hw" }
         { echo: "Testing clean action (build.json)..." }
         { exec: "../../nodeGaudi -f build.json clean" }
+        { echo: "Testing build action (build.cson) for Hello World example program..." }
+        { exec: "../../nodeGaudi -f build.cson build" }
+        { exec: "./hw" }
+        { echo: "Testing clean action (build.cson)..." }
+        { exec: "../../nodeGaudi -f build.cson clean" }
+        { chdir: "../Directories" }
+        { echo: "Testing build action (build.json) for Directories example..." }
+        { exec: "../../nodeGaudi -f build.json build" }
+        { exec: "ls -a" }
+        { echo: "Testing clean action (build.json)..." }
+        { exec: "../../nodeGaudi -f build.json clean" }
+        { exec: "ls -a" }
+        { echo: "Testing build action (build.cson) for Directories example..." }
+        { exec: "../../nodeGaudi -f build.cson build" }
+        { exec: "ls -a" }
+        { echo: "Testing clean action (build.cson)..." }
+        { exec: "../../nodeGaudi -f build.cson clean" }
+        { exec: "ls -a" }
     ]
 }
