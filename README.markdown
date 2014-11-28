@@ -1,4 +1,4 @@
-nodeGaudi [![Build Status](https://travis-ci.org/stpettersens/nodeGaudi.png?branch=master)](https://travis-ci.org/stpettersens/nodeGaudi)
+nodeGaudi [![Build Status](https://travis-ci.org/stpettersens/nodeGaudi.png?branch=master)](https://travis-ci.org/stpettersens/nodeGaudi) [![Dependency Status](https://david-dm.org/stpettersens/nodeGaudi.png?theme=shields.io)](https://david-dm.org/stpettersens/nodeGaudi)
 --------
 
 Gaudi implemented with Node.js.
