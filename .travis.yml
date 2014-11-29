@@ -2,10 +2,10 @@
 # Travis CI configuration for nodeGaudi
 #
 
-# This is a Node.js project; test against Node.js 0.11 and 0.10.
+# This is a Node.js project; test against Node.js 0.10.
+# CSON module seems to be incompatible with 0.11.
 language: node_js
 node_js:
-  #- "0.11"
   - "0.10"
 
 # Use `g++` for compiling HelloWorld C++ example.
