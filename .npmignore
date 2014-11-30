@@ -1,0 +1,9 @@
+node_modules/
+hw
+*.log
+.gitignore
+.travis.yml
+build.cson
+nodeGaudi
+nodeGaudi.cmd
+Rakefile
