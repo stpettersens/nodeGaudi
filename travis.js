@@ -4,3 +4,4 @@ var bickle = 'bickle builds stpettersens/nodeGaudi -n 5';
 cp.exec(bickle, function(err, stdout, stderr) {
 	console.log(stdout);
 });
+
