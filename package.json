@@ -11,7 +11,7 @@
         "example": "examples"
     },
     "dependencies": {
-        "generic-functions": ">= 0.1.4",
+        "generic-functions": ">= 0.1.6",
         "exec-sync": ">= 0.1.6",
         "colors": ">= 1.0.3",
         "ncp": ">= 1.0.1",
