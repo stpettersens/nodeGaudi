@@ -17,6 +17,11 @@
         { echo: "" }
     ]
 
+    # Check Travis CI build status using `bickle`.
+    travis: [
+        { exec: "bickle builds stpettersens/nodeGaudi -n 5" }
+    ]
+
     # Define build action, an alias for test action.
     build: [
         { doAction: "test" }
