@@ -3,7 +3,7 @@
 	preamble: {
 		source: "hw.cpp"
 		target: "hw"
-		cc: "hw"
+		cc: "g++"
 	}
 
 	# Define build action.
