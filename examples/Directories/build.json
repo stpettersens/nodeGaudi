@@ -8,7 +8,7 @@
 	"build": [
 		
 		{ "echo": "Current working directory is:" },
-        	{ "pwd": "." },
+        { "pwd": "." },
 		{ "echo": "Create a directory: src" },
 		{ "mkdir": "src" },
 		{ "echo": "Create a text file: blah.txt" },
