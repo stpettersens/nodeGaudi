@@ -1,7 +1,7 @@
-#
+##
 # Test nodeGaudi on local system or Travis CI with nodeGaudi itself.
 # build.cson - CoffeeScript Object Notation build file.
-#
+##
 {
     # Define preamble.
     preamble: {
