@@ -1,0 +1,13 @@
+#
+# Appveyor CI configuration for nodeGaudi.
+#
+
+install:
+    - "node --version"
+    - "npm --version"
+
+build_script:
+    - "npm install"
+
+test_script:
+    - "nodeGaudi -f build.cson test"

@@ -1,5 +1,5 @@
 #
-# Travis CI configuration for nodeGaudi
+# Travis CI configuration for nodeGaudi.
 #
 
 # This is a Node.js project; test against Node.js 0.10.
