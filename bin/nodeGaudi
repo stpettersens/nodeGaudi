@@ -21,4 +21,4 @@ Please see LICENSE file.
  * @description Invoke the NodeGaudi command line interface (CLI).
  * @param {string[]} process_argv Command line arguments.
 */
-require('./lib/NodeGaudiApp.js').cli(process.argv);
+require('/usr/lib/node_modules/node-gaudi/lib/NodeGaudiApp.js').cli(process.argv);

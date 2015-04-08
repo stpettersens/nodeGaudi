@@ -1,6 +1,6 @@
 {
     "name": "nodeGaudi",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Gaudi platform agnostic build tool implemented with Node.js",
     "main": "./lib/NodeGaudiApp.js",
     "bin": {
@@ -43,8 +43,5 @@
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/stpettersens/nodeGaudi/issues"
-    },
-    "engines": {
-        "node": ">= 1.0.x"
     }
 }
